@@ -1,0 +1,150 @@
+{
+  "days": [
+    {
+      "id": 1,
+      "day": 1
+    },
+    {
+      "id": 2,
+      "day": 2
+    },
+    {
+      "id": 3,
+      "day": 3
+    },
+    {
+      "day": 4,
+      "id": 4
+    },
+    {
+      "day": 5,
+      "id": 5
+    },
+    {
+      "day": 6,
+      "id": 6
+    },
+    {
+      "day": 7,
+      "id": 7
+    }
+  ],
+  "words": [
+    {
+      "id": 1,
+      "day": 1,
+      "eng": "book",
+      "kor": "책",
+      "isDone": false
+    },
+    {
+      "id": 3,
+      "day": 2,
+      "eng": "car",
+      "kor": "자동차",
+      "isDone": true
+    },
+    {
+      "day": "3",
+      "eng": "house",
+      "kor": "집",
+      "isDone": false,
+      "id": 8
+    },
+    {
+      "day": "2",
+      "eng": "mouse",
+      "kor": "쥐",
+      "isDone": false,
+      "id": 9
+    },
+    {
+      "day": "4",
+      "eng": "monkey",
+      "kor": "원숭이",
+      "isDone": false,
+      "id": 10
+    },
+    {
+      "day": "4",
+      "eng": "apple",
+      "kor": "사과",
+      "isDone": false,
+      "id": 11
+    },
+    {
+      "day": "3",
+      "eng": "apple",
+      "kor": "사과",
+      "isDone": false,
+      "id": 12
+    },
+    {
+      "day": "1",
+      "eng": "Kao",
+      "kor": "까오",
+      "isDone": false,
+      "id": 13
+    },
+    {
+      "day": "4",
+      "eng": "Up",
+      "kor": "업",
+      "isDone": false,
+      "id": 14
+    },
+    {
+      "day": "1",
+      "eng": "까오",
+      "kor": "업",
+      "isDone": false,
+      "id": 15
+    },
+    {
+      "day": "1",
+      "eng": "1",
+      "kor": "1",
+      "isDone": false,
+      "id": 16
+    },
+    {
+      "day": "7",
+      "eng": "1",
+      "kor": "1",
+      "isDone": false,
+      "id": 17
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "no": 1,
+      "name": "아메리카노",
+      "img": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FJ0USg%2Fbtq2Mwc9jWg%2FSUbc7XFOMtIKrBPzOkQtK0%2Fimg.jpg"
+    },
+    {
+      "id": 2,
+      "no": 2,
+      "name": "라떼",
+      "img": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb0SGBh%2Fbtq2MvrKUap%2FyDKGkOUauBmoC8yTT0scp0%2Fimg.jpg"
+    }
+  ],
+  "infos": [
+    {
+      "no": 1,
+      "eng": "아메리카노",
+      "kor": "아이스아메리카노",
+      "price": 4000,
+      "isDone": false,
+      "id": 1
+    },
+    {
+      "no": 2,
+      "eng": "라떼",
+      "kor": "아이스라떼",
+      "price": 5000,
+      "isDone": false,
+      "id": 2
+    }
+  ]
+}
