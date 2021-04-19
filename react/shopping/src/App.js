@@ -8,6 +8,10 @@ import CreateItem from "./component/CreateItem";
 import MenuIntroduce from "./component/MenuIntroduce";
 import ItemList from "./component/ItemList";
 import Item from "./component/Item";
+import EventList from "./component/EventList";
+import Event from "./component/Event";
+import Notice from "./component/Notice";
+import NoticeInfo from "./component/NoticeInfo";
 
 function App() {
   return (
@@ -32,6 +36,18 @@ function App() {
           </Route>
           <Route path="/item/:no">
             <Item />
+          </Route>
+          <Route path="/menu_event">
+            <EventList />
+          </Route>
+          <Route path="/event/:id">
+            <Event />
+          </Route>
+          <Route path="/menu_notice">
+            <Notice />
+          </Route>
+          <Route path="/notice/:id">
+            <NoticeInfo />
           </Route>
           <Route>
             <EmptyPage />
