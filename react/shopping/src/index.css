@@ -145,6 +145,67 @@ button {
   background-color: dodgerblue;
 }
 
+  /*이벤트에 들어갈 CSS 코드*/
+
+.list_event {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list_event li {
+  flex: 20% 0 0;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.list_event p{
+  text-align:right;
+  line-height: 5px;
+  font-size: 10px;
+  position:relative;
+}
+
+.event_info{
+  background-color: dimgrey;
+  overflow: hidden;
+}
+
+.event_img{
+  float: left;
+}
+
+.event_text{
+  text-align:left;
+  line-height: 50px;
+  position:relative;
+}
+
+.cmt_title {
+  text-align: left;
+}
+
+.cmt_cmts{
+  text-align: left;
+}
+
+.id{
+  font-weight: bold;
+  float: left;
+}
+
+
+/*공지사항 UI*/
+.list_notice{
+  text-align: left;
+  line-height: 50px;
+}
+
+.list_notice li{
+  border: 5px groove black;
+}
+
 .input_area {
   margin-bottom: 10px;
 }
