@@ -13,7 +13,7 @@ export default function Header() {
                 <a href="/menu_introduce" className="link">소개</a>
                 <a href="/menu_item" className="link">상품</a>
                 <a href="/menu_event" className="link">이벤트</a>
-                <a href="/menu_board" className="link">공지사항</a>
+                <a href="/menu_notice" className="link">공지사항</a>
             </div>
         </div>
     );
