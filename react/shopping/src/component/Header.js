@@ -7,7 +7,7 @@ export default function Header() {
                 <Link to="/">Shop</Link>
             </h1>
             <div className="menu">
-                <a href="/create_item" className="link">상품추가</a>
+                <a href="/create" className="link">추가하기</a>
             </div>
             <div className="sidemenu">
                 <a href="/menu_introduce" className="link">소개</a>
