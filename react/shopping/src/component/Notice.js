@@ -1,20 +1,21 @@
 import useFetch from "../hooks/useFetch";
-import { Link } from "react-router-dom";
+import {useParams} from "react-router-dom";
+import Noticeinfo from "./Noticeinfo";
 
-export default function Notice() {
-    const notices = useFetch('http://localhost:3001/notices');
+export default function Notice(){
 
-    return (
-      <>
-      <ul className="list_notice">
-        {notices.map(notice => (
-          <li key={notice.id}>
-            <Link to={`/notice/${notice.id}`}>
-                {notice.name}
-            </Link>
-          </li>
-        ))}
-        </ul>
-      </>
+    const notices = useFetch(`http://localhost:3001/notices`);
+
+    return( 
+    <>
+    <h2>Notice</h2>
+    <table>
+        <tbody>
+            {notices.map(notice => (
+                <Noticeinfo notice={notice} key={notice.id}/>
+            ))}
+        </tbody>
+    </table>
+    </>
     );
 }
