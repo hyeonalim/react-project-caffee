@@ -1,6 +1,7 @@
 import useFetch from "../hooks/useFetch";
 import { useState } from "react"
 import { useParams } from "react-router-dom";
+import Commant from "./Comment";
 
 export default function EventInfo({ event_info: inf }) {
   const [event_info, setEventInfo] = useState(inf);
@@ -34,6 +35,8 @@ export default function EventInfo({ event_info: inf }) {
             </ul>
             </div>
           ))}
+
+      {isShow && <Commant/>}
       <div className="move_btn">
           <a href="/menu_event">뒤로가기</a>
           <a href="/">Home</a>
