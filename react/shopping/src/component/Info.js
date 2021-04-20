@@ -20,11 +20,6 @@ export default function Info({ info: inf }) {
             <li>{info.eng}</li>
             <li>{info.kor}</li>
             <li>{info.price}</li>
-            <li>
-            <button>-</button>0<button>+</button>
-      <a href="/order" className="link">구매하기</a>
-            
-            </li>
           </ul>
         </div>
       </div>
