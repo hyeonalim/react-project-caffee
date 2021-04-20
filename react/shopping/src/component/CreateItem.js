@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import { useHistory } from "react-router";
 import useFetch from "../hooks/useFetch";
+import Create from "./Create";
 
 export default function CreateItem() {
     const items = useFetch("http://localhost:3001/items");
@@ -53,32 +54,29 @@ export default function CreateItem() {
 
     return (
         <div>
-            <div className="input_area">
-                <label>상품명</label>
-                <input type="text" placeholder="상품명" ref={nameRef} />
+            <div>
+                <Create />
             </div>
-            <div className="input_area">
-                <label>상품이미지 URL</label>
-                <input type="text" placeholder="상품이미지url" ref={imgRef} />
+            <div className="info">
+                <ul>
+                <div className="info_item img">
+                    <li>상품이미지 URL</li>
+                    <li><input type="text" placeholder="상품이미지url" ref={imgRef} /></li>
+                </div>
+                <div className="info_item text">
+                    <li>상품명</li>
+                    <li><input type="text" placeholder="상품명" ref={nameRef} /></li>
+                    <li>상품설명</li>
+                    <li><input type="text" placeholder="상품설명" ref={korRef} /></li>
+                    <li>가격</li>
+                    <li><input type="text" placeholder="가격" ref={priceRef} /></li>
+                </div>
+                </ul>
             </div>
-
-
-            <div className="input_area">
-                <label>상품명</label>
-                <input type="text" placeholder="상품명" ref={engRef} />
-            </div>
-            <div className="input_area">
-                <label>상품설명</label>
-                <input type="text" placeholder="상품설명" ref={korRef} />
-            </div>
-            <div className="input_area">
-                <label>가격</label>
-                <input type="text" placeholder="가격" ref={priceRef} />
-            </div>
-
+            <div className="button">
             <button onClick={addItem}>상품추가</button>
             <a href="/" className="link">취소</a>
-
+            </div>
         </div>
     )
 }
