@@ -13,6 +13,7 @@ export default function ItemList() {
           {items.map(item => (
             <>
                 <Info item={item} key={item.id}/>
+                <li>
                 <div>
                 <p><label class="btn" for="open-pop">
                 
@@ -21,6 +22,7 @@ export default function ItemList() {
                 
                 </label></p>
                 </div>
+                </li>
                 <input class="modal-state" id="open-pop" type="checkbox" />    
                                
                 </>
