@@ -106,6 +106,104 @@ a {
   position:relative;
 }
 
+/*portfolio*/
+			/*팝업 열림, 닫힘*/			
+			.modal {
+		    opacity:0;
+			visibility: hidden;
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			text-align: left;
+			background: rgba(0,0,0, .6);
+			transition: opacity .25s ease;
+			}
+			/*배경 선택시 팝업 닫힘*/
+			.modal_bg {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			cursor: pointer;
+			}
+
+			/*체크박스 안보이기*/
+			.modal-state {
+			display: none;
+			}
+			/*체크박스 체크 시*/
+			.modal-state:checked + .modal {
+			opacity: 1;
+			visibility: visible;
+			}
+			/*체크박스 미체크 시*/
+			.modal-state:checked + .modal .modal__inner {
+			top: 0;
+			}
+			/*팝업 내용물*/
+			.modal_inner {
+			transition: top .25s ease;
+			position: absolute;
+			top: -20%;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 50%;
+			margin: auto;
+			overflow: auto;
+			background: #fff;
+			border-radius: 5px;
+			padding: 1em 2em;
+			height: 50%;
+			}
+			/*팝업 닫기 버튼*/
+			.modal_close {
+			position: absolute;
+			right: 1em;
+			top: 1em;
+			width: 1.1em;
+			height: 1.1em;
+			cursor: pointer;
+			}
+			/*팝업 닫기 전, 후에 팝업 닫기 버튼 보이기*/
+			.modal_close:after,
+			.modal_close:before {
+			content: '';
+			position: absolute;
+			width: 2px;
+			height: 1.5em;
+			background: #ccc;
+			display: block;
+			transform: rotate(45deg);
+			left: 50%;
+			margin: -3px 0 0 -1px;
+			top: 0;
+			}
+			/*팝업 닫기 전, 후 배경*/
+			.modal_close:hover:after,
+			.modal_close:hover:before {
+			background: #aaa;
+			}
+			
+			/*팝업 닫기 전, UI X표로 보이기*/
+			.modal_close:before {
+			transform: rotate(-45deg);
+			}
+			
+			/*팝업 스크린 크기에 따라 달라지기*/
+			@media screen and (max-width: 768px) {
+			
+			.modal_inner {
+			width: 90%;
+			height: 90%;
+			box-sizing: border-box;
+			}
+			}
+
+
 table {
   border-collapse: collapse;
   width: 100%;
