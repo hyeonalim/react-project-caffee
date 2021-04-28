@@ -12,19 +12,19 @@ export default function ItemList() {
           <ul className="list_day">
           {items.map(item => (
             <>
-                <Info item={item} key={item.id}/>
+            <Info item={item} key={item.id}/>
                 <li>
                 <div>
                 <p><label class="btn" for="open-pop">
                 
                   <img src={`${item.img}`}></img>
                   {item.name}
-                
                 </label></p>
                 </div>
                 </li>
+                
                 <input class="modal-state" id="open-pop" type="checkbox" />    
-                               
+                       
                 </>
               ))}
         </ul>
